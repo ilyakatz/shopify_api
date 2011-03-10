@@ -267,6 +267,9 @@ module ShopifyAPI
   
   class Product < Base
 
+    class Option < Base
+    end
+
     # Share all items of this store with the 
     # shopify marketplace
     def self.share; post :share;  end    
